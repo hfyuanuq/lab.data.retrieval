@@ -1,0 +1,79 @@
+ssh -i /Users/huifangyuan/pubbb2024 huifang@203.101.225.73
+BlankLines
+
+
+
+
+## Huifang 
+
+CS2 sequencing information 
+/opsin/opsin/u/huifang/project/01.CEL-seq2.data/H201SC20040937
+/opsin/opsin/u/huifang/project/01.CEL-seq2.data/CEL.analysis/01.raw_data/MD5.txt
+
+
+scp -r raw.rawdata/   uqhyuan2@bunya.rcc.uq.edu.au:/QRISdata/Q2677/00.data/01.RNA-Seq.count.table/08.Huifang.life.cycle.CS2/00.raw.datasets/
+
+
+CS2 Lane1 Lane2  fastq and sam:
+nohup scp -r  /opsin/opsin/u/huifang/project/01.CEL-seq2.data/CEL.analysis/01.raw_data/raw.rawdata/  /home/huifang/temp_space/02.CS2 &
+
+
+
+
+
+ATAC-Seq
+original datasets: 
+nohup scp -r /opsin/opsin/shared/DATA/Amphimedon/ATAC-Seq/200417_A00401_0145_BHLNCWDRXX   ./ &
+
+scp -r 200417_A00401_0145_BHLNCWDRXX/   uqhyuan2@bunya.rcc.uq.edu.au:/QRISdata/Q2677/00.data/02.Chromatin.data/01.ATAC/00.raw.data/reads.fq/ 
+
+
+
+
+
+After QC and trim 
+/fox/u/huifang/project/02.ATAC.analysis/1hps/clean
+/fox/u/huifang/project/02.ATAC.analysis/6.7hps_competent/clean
+/fox/u/huifang/project/02.ATAC.analysis/precompetent/clean.data
+
+
+
+CUT-RUN
+gzip  *.fq
+
+/opsin/opsin/shared/DATA/Huifang.CUT-RUN
+
+nohup scp -r /opsin/opsin/shared/DATA/Huifang.CUT-RUN   /home/huifang/temp_space/ &
+
+
+scp -r /home/huifang/temp_space/Huifang.CUT-RUN/  uqhyuan2@bunya.rcc.uq.edu.au:/QRISdata/Q2677/00.data/02.Chromatin.data/02.CUT.RUN/
+ 
+ 
+ 
+ /QRISdata/Q2677
+ 
+ 
+ 
+#### Sheen's data
+ 
+nohup scp -r /opsin/opsin/shared/DATA/SYMBIONTS/TruSeq-total-stranded-RNA/210323_A00401_0250_BH5VVGDRXY ./  &
+
+scp -r 210323_A00401_0250_BH5VVGDRXY/  uqhyuan2@bunya.rcc.uq.edu.au:/QRISdata/Q6081/NCBI_GEO_Submission_June2023
+
+ 
+ 
+
+ 
+ Olivia
+ 16S
+ 
+ /QRISdata/Q2197
+ 
+scp -r   16S_data/ uqhyuan2@bunya.rcc.uq.edu.au:/QRISdata/Q2197/01.16S.data 
+  
+ 
+ 
+ 
+ /QRISdata/A4766
+ 
+ 
